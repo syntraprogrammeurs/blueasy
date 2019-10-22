@@ -135,12 +135,12 @@ nav{
     padding:12px 18px;
 
 }
-#brandnav ul li a:hover{
+#brandnav ul > li > a:hover{
   /* border:1px solid #4bb1dd;*/
 
    border-color:#4bb1dd;
-   border-top:1px solid #4bb1dd;
-   border-bottom:1px solid #4bb1dd;
+   /*border-top:1px solid #4bb1dd;
+   border-bottom:1px solid #4bb1dd;*/
    color:#4bb1dd;
 }
 #brandnav li:not(:last-child){
@@ -211,4 +211,24 @@ nav{
   font-family: segoeui;
   /*padding-right:275px;*/
   width:460px;
+}
+#brandnav ul{
+  position:relative;
+}
+#brandnav ul ul{
+  display:none;
+  position:absolute;
+  top:55px;
+
+}
+#brandnav ul li:hover > ul {
+  display:block;
+color:#4bb1dd;
+
+}
+#homeul{
+left:0px;
+}
+#servicesul{
+left:90px;
 }
